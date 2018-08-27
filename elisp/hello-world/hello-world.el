@@ -4,6 +4,10 @@
 
 ;;; Code:
 
+(defun hello ()
+  "Returns 'Hello, World!' message"
+  "Hello, World!")
+
 
 (provide 'hello-world)
 ;;; hello-world.el ends here
