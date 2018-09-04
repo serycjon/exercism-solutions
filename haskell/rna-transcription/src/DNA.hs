@@ -2,7 +2,7 @@ module DNA (toRNA) where
 
 
 toRNA :: String -> Maybe String
-toRNA dna = mapM nucleotideToRNA dna
+toRNA dna = traverse nucleotideToRNA dna
   where nucleotideToRNA 'C' = Just 'G'
         nucleotideToRNA 'G' = Just 'C'
         nucleotideToRNA 'T' = Just 'A'
